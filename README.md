@@ -43,4 +43,4 @@ To simulate the other baseline methods, run the file test_all_ood.py where the c
 
 
 
-Some of the code has been borrowed from the repsitory of the paper "NECO: NEURAL COLLAPSE BASED OUT-OFDISTRIBUTION DETECTION" https://arxiv.org/abs/2310.06823.
+Some of the code has been borrowed from the repsitory of the paper "NECO: NEURAL COLLAPSE BASED OUT-OFDISTRIBUTION DETECTION" (https://arxiv.org/abs/2310.06823).
