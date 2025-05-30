@@ -34,7 +34,7 @@ id_data contains the in-distribution files for that dataset while ood_data holds
 Among the four neural network architectures evaluated, the pretrained checkpoints for ResNet-18 and ResNet-34 on CIFAR-10 and CIFAR-100 are available in the 'model_checkpoints' folder.
 For ResNet-50 and MobileNet, we used the ImageNet-pretrained weights provided by Torchvision.
 3. **Experiments Running**<br>
-Experiments can be run using the following command:<br>
+PSOD can be experimented with using the following command:<br>
 python main.py --id_data <id_data_name> --ood_data <ood_data_name>  --model_name <model_name><br>
 For example, one scenario is given below:<br>
 python main.py --id_data cifar10 --ood_data SVHN  --model_name resnet18 
