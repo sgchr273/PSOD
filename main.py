@@ -161,12 +161,11 @@ def main():
     ### Loading trained model's checkpoint that gives ~93% test accuracy on ID dataset. For 
     ### imagenet-1k we use the pretrained checkpoints of resnet50 and mobilenet. 
     if args.id_data in ['cifar10','cifar100']:
-        model.load_state_dict(torch.load(f'/usr/local/home/sgchr/Documents/OOD/Multiple_spaces/{args.model_name}_{args.id_data}.pth'))
+        model.load_state_dict(torch.load(f'/usr/local/home/sgchr/Documents/OOD/Multiple_spaces/model_checkpoints/{args.model_name}_{args.id_data}.pth'))
 
     # 2) DataLoaders
     val_loader = id_dataloaders(args.id_data, BASE)
     ood_loader = ood_dataloaders(args.ood_data, args.id_data, BASE)
-    print('here')
     # 3) Feature Extraction
     id_features, id_labels = extract_features(model, val_loader, args.model_name)
     ood_features, _  = extract_features(model, ood_loader, args.model_name)
