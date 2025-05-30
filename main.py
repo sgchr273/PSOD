@@ -82,7 +82,7 @@ def extract_features(model, loader, model_name: str):
     with torch.no_grad():
         for images, targets in loader:
             images, targets = images.to(device), targets.to(device)
-            if model_name == "resnet18" or model_name == "renset34":
+            if model_name == "resnet18" or model_name == "resnet34":
                 _, _, feat, _ = model(images)
             else:
                feat = penult(images).squeeze(-1).squeeze(-1)
