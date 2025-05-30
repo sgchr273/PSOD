@@ -37,8 +37,8 @@ For ResNet-50 and MobileNet, we used the ImageNet-pretrained weights provided by
 PSOD can be experimented with using the following command:<br>
 python main.py --id_data <id_data_name> --ood_data <ood_data_name>  --model_name <model_name><br>
 For example, one scenario is given below:<br>
-python main.py --id_data cifar10 --ood_data SVHN  --model_name resnet18 
- 
+python main.py --id_data cifar10 --ood_data SVHN  --model_name resnet18 <br><br>
+To simulate the other baseline methods, run the file test_all_ood.py where the configuration for id_data, ood_data and model_name can be set the same way we did above for PSOD.   
 
 
 
