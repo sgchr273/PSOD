@@ -1,5 +1,5 @@
 This is the official repository for the paper "Class-Specific Subspace Alignment for Effective
-Out-of-Distribution Detection".
+Out-of-Distribution Detection". The steps to run the experiment are provided below:
 
 1. **Data arrangement**<br>
 We downloaded and organized the three in-distribution datasets used in our experiments. Both CIFAR-10 and ImageNet include two subfolders—id_data and ood_data—where:
