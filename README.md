@@ -38,7 +38,7 @@ PSOD can be experimented with using the following command:<br>
 python main.py --id_data <id_data_name> --ood_data <ood_data_name>  --model_name <model_name><br>
 For example, one scenario is given below:<br>
 python main.py --id_data cifar10 --ood_data SVHN  --model_name resnet18 <br><br>
-To simulate the other baseline methods, run the file test_all_ood.py where the configuration for id_data, ood_data and model_name can be set the same way we did above for PSOD. To run the baselines, one first needs to extrcat the data features, save them and then load these features in the file. The code for the features extrcation has been provided in the main.py.  
+To simulate the other baseline methods, run the file test_all_ood.py where the configuration for id_data, ood_data and model_name can be set the same way we did above for PSOD. To run the baselines, one first needs to extract the data features, save them and then load these features in the file. The code for the features extraction has been provided in the main.py.  
 
 
 
